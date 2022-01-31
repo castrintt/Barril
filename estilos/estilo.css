@@ -237,7 +237,7 @@ footer p {
         transition-duration:1s ;
     }
     footer {
-
+        height: 80px;
     }
 }
 
