@@ -1,0 +1,249 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-texto);
+    
+}
+
+:root {
+    --cor-principal:#F29F05;
+    --cor-principal2:#F27405;
+    --font-texto:'Noto Sans', sans-serif;
+}
+#sumir{
+   visibility: hidden;
+}
+a {
+    text-decoration: none;
+}
+body {
+    height: 100vh;
+    background-image: url("../body.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: left center;
+    
+}
+
+/* CABEÇLHO */
+header {
+    height: 71px;
+    background-color: rgba(0, 0, 0, 0.514);
+    position: fixed;
+    width: 100vw;
+    transition-duration:1s ;
+
+}
+img {
+    border-radius: 50%;
+    width: 80px;
+    height: 70px;
+}
+
+.menu {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav a:first-child {
+    margin-right: 200px;
+}
+.logo {
+    position: fixed;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%);
+}
+
+a {
+    font-weight: bold;
+    font-size: 13px;
+    color:var(--cor-principal2);
+    border-bottom: 1px solid rgba(129, 127, 127, 0.527);
+    padding-bottom: 5px;
+}
+.slogan {
+    position: relative;
+    background-color: rgba(87, 87, 87, 0.637);
+    border-radius: 10px;
+    padding: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    margin-top: 20px;
+    font-size: 22px;
+    color:var(--cor-principal);
+    text-shadow: 3px 3px 10px var(--cor-principal);
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.692);
+    width: 200px;
+    line-height: 30px;
+
+}
+
+/* IMAGEM DE FUNDO */
+
+.imagem-fundo-pagina-principal {
+    background-image: url("../fundo/barril-frente-melhor.png");
+    height: 300px;
+    width: 98.5vw;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-position: left center;
+    background-size: cover;
+
+    
+}
+/* FLEX ITEMS MENU */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.box {
+    margin-top: 50px;
+    width: 250px;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 8px rgb(0, 0, 0);
+    transition: transform 1s ease;
+    margin-right: 50px;
+}
+.box a{
+    padding: 10px;
+    border: 1px solid rgba(136, 135, 135, 0.637);
+    position: relative;
+    font-size: 32px;
+    top: 35%;
+    left:6%;  
+    color:white;
+    background-color: rgba(65, 39, 39, 0.473);
+    border-radius: 3px;
+    
+}
+.box:hover {
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+/* configuração para as ancoras */
+.box:first-child a{
+    left: 20%;
+}
+.box:nth-of-type(2) a {
+    left: 14%;
+}
+.box:nth-of-type(3) a{
+    left: 14%;
+}
+.box:nth-of-type(5) a {
+    left: 17%;
+}
+.box:nth-of-type(6) a {
+    left: 28%;
+}
+
+/* configuração para o fundo das ancoras */
+.box:first-child {
+    background-image: url("../drinks/drink.png");
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    
+}
+.box:nth-of-type(2) {
+    background-image: url("../cardapio/cardapio.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: local;
+}
+
+.box:nth-of-type(3) {
+    background-image: url("../atracoes/atracao.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+.box:nth-of-type(4){
+    background-image: url("../promocoes/promocao.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box:nth-of-type(5){
+    background-image: url("../combo/combo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+
+}
+.box:nth-of-type(6) {
+    background-image: url("../tbt/tbt.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+footer {
+    margin-top: 100px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+footer p {
+    padding:5px;
+    font-size:13px ;
+}
+.footer-box:first-child p{
+    font-size: 10px;
+}
+
+@media all and (max-width:960px){
+    .container {
+        margin-left: 50px;
+
+
+
+    }
+
+}
+@media all and (max-width:666px){
+    .imagem-fundo-pagina-principal{
+        background-position: center center;
+        background-size: contain;
+    }
+}
+@media all and (max-width:459px){
+    header {
+        height: 48px;
+        transition-duration:1s ;
+    }
+    footer {
+
+    }
+}
+
+@media all and (min-width:860px){
+    .imagem-fundo-pagina-principal{
+        background-size: cover;
+       
+    }
+}
