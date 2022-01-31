@@ -219,22 +219,25 @@ footer p {
 @media all and (max-width:960px){
     .container {
         margin-left: 50px;
-
-
-
     }
 
 }
 @media all and (max-width:666px){
     .imagem-fundo-pagina-principal{
-        background-position: center center;
+        background-position: right center;
         background-size: contain;
+    }
+    body {
+        background-position: center center;
     }
 }
 @media all and (max-width:459px){
     header {
         height: 48px;
         transition-duration:1s ;
+    }
+    body {
+        background-position: right center;
     }
     footer {
         height: 80px;
