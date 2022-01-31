@@ -239,11 +239,17 @@ footer p {
     footer {
         height: 80px;
     }
+    .imagem-fundo-pagina-principal{
+        background-position: center center;
+    }
 }
 
 @media all and (min-width:860px){
     .imagem-fundo-pagina-principal{
         background-size: cover;
        
+    }
+    .imagem-fundo-pagina-principal{
+        background-position: center center;
     }
 }
